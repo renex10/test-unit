@@ -41,3 +41,39 @@ python atm.py
 
 
 python -m unittest discover -s tests -v
+
+
+
+
+
+
+Cobertura de Código con Coverage
+
+Este proyecto utiliza coverage.py para medir la cobertura de las pruebas y generar un reporte en HTML.
+Instrucciones para la Cobertura de Código
+
+    Instala la Herramienta coverage.py
+
+    Si coverage.py no está instalado, instálalo con el siguiente comando:
+
+    bash
+
+pip install coverage
+
+Ejecuta las Pruebas con Coverage
+
+Usa coverage para ejecutar las pruebas y recolectar los datos de cobertura:
+
+bash
+
+coverage run -m unittest discover -s tests
+
+Esto generará un archivo oculto llamado .coverage en el directorio principal, que contiene los datos de cobertura.
+
+Genera el Reporte en HTML
+
+Para crear el reporte de cobertura en formato HTML:
+
+bash
+
+coverage html
